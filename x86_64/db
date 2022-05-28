@@ -1,2 +1,2 @@
-#!/bin/bash
+#!/bin/sh
 repo-add duckverse.db.tar.gz *.pkg.tar.zst
