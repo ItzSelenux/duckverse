@@ -10,3 +10,4 @@ Package                | Version | about      |
  <a href='https://github.com/ItzSelenux/duckverse/raw/main/x86_64/spacefm-1.0.6-3-x86_64.pkg.tar.zst'>spacefm               | 1.0.6-3 | Multi-panel tabbed file manager
  <a href='https://github.com/ItzSelenux/duckverse/raw/main/x86_64/ttf-comfortaa-3.100-2-any.pkg.tar.zst'>ttf-comfortaa         | 3.100-2 | Rounded geometric sans-serif typeface from Google by Johan Aakerlund
  <a href='https://github.com/ItzSelenux/duckverse/raw/main/x86_64/ttf-perfectdos-vga-1-1-any.pkg.tar.zst'>ttf-perfectdos-vga    | 1-1     | Exact remake of the DOS VGA font in TTF   
+ <a href='https://github.com/ItzSelenux/duckverse/raw/main/x86_64/ttf-twemoji-14.0.2-1-any.pkg.tar.zst'>ttf-twemoji    | 14.0.2-1     | Twitter Emoji for everyone   
