@@ -1,0 +1,20 @@
+# Maintainer: ItzSelenux
+
+pkgname=ttf-perfectdos-vga
+pkgver=1
+pkgrel=1
+pkgdesc='Exact remake of the DOS VGA font in TTF'
+arch=('any')
+url='https://archive.org/details/LessPerfectDOSVGA'
+license=('OFL')
+
+source=("LessPerfectDOSVGA.ttf::https://archive.org/download/LessPerfectDOSVGA/LessPerfectDOSVGA.ttf"
+        "MorePerfectDOSVGA.ttf::https://archive.org/download/LessPerfectDOSVGA/MorePerfectDOSVGA.ttf")
+sha256sums=('e7295b1858a58dfb3c98562fb1112eb053f04f30417bfc3f102baf9d91181c73' 
+			'f7b0d074f08ababe781f8e6de181faaed417d3fee3168c3abc3c177aabf78acd')
+
+package() {
+  install -dm 755 "${pkgdir}/usr/share/fonts/TTF"
+  install -m 644 LessPerfectDOSVGA.ttf "${pkgdir}/usr/share/fonts/TTF/LessPerfectDOSVGA.ttf"
+  install -m 644 MorePerfectDOSVGA.ttf "${pkgdir}/usr/share/fonts/TTF/MorePerfectDOSVGA.ttf"
+}
