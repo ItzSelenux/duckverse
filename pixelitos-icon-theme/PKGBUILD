@@ -1,0 +1,26 @@
+pkgname="pixelitos-icon-theme"
+_reponame='pixelitos-icon-theme'
+pkgver=1.190522.r3.g8810d27
+pkgrel=1
+arch=("any")
+pkgdesc="A pixel art icon theme"
+url="https://github.com/ItzSelenux/${_reponame}"
+license=("MIT")
+makedepends=("git")
+source=("git+$url.git")
+sha256sums=('SKIP')
+
+pkgver()
+{
+  cd "${srcdir}/${_reponame}"
+  git describe --long --tags | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
+}
+
+package()
+{
+  cd "${srcdir}"
+  DEST_DIR="$pkgdir/usr/share/icons"
+  install -d "$DEST_DIR"
+  cp -r pixelitos-icon-theme $DEST_DIR/pixelitos-icon-theme
+}
+

@@ -1,0 +1,37 @@
+# Maintainer: ItzSelenux 
+pkgname=rofi-mintmenu-themes
+pkgver=1.0
+pkgrel=1
+pkgdesc="Mint-Y based grid themes for Rofi,"
+url="https://github.com/ItzSelenux/rofi-mintmenu-themes"
+arch=('any')
+license=("GPL3")
+depends=('rofi')
+source=(https://github.com/ItzSelenux/$pkgname/archive/refs/tags/1.0.zip)
+sha256sums=('b627208f48dcdfd00cbb2e216acb5457b6a349048a058f6f1a1cb7812f10e7c3')
+ 
+package() {
+  cd "$pkgname-$pkgver/themes/"
+  install -Dm755 "MintMenu-Aqua-Dark.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Blue-Dark.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Brown-Dark.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Green-Dark.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Grey-Dark.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Orange-Dark.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Pink-Dark.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Purple-Dark.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Red-Dark.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Sand-Dark.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Teal-Dark.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Aqua-Light.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Blue-Light.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Brown-Light.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Green-Light.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Grey-Light.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Orange-Light.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Pink-Light.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Purple-Light.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Red-Light.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Sand-Light.rasi" -t "$pkgdir/usr/share/rofi/themes"
+  install -Dm755 "MintMenu-Teal-Light.rasi" -t "$pkgdir/usr/share/rofi/themes"
+}
