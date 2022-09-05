@@ -16,3 +16,4 @@ Package                | Version | about      |
  <a href='https://github.com/ItzSelenux/duckverse/raw/main/x86_64/ttf-perfectdos-vga-1-1-any.pkg.tar.zst'>ttf-perfectdos-vga    | 1-1     | Exact remake of the DOS VGA font in TTF   
  <a href='https://github.com/ItzSelenux/duckverse/raw/main/x86_64/ttf-twemoji-14.0.2-1-any.pkg.tar.zst'>ttf-twemoji    | 14.0.2-1     | Twitter Emoji for everyone   
 
+xd

@@ -1,7 +1,7 @@
 # Maintainer: Alad Wenter <alad@mailbox.org>
 # Contributor:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
 # Contributor: IgnorantGuru http://igurublog.wordpress.com/contact-ignorantguru/
-
+#
 pkgname=udevil
 pkgver=0.4.4
 pkgrel=4
