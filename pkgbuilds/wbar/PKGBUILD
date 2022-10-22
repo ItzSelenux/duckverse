@@ -1,6 +1,13 @@
 # Maintainer: ItzSelenux <itszariep@outlook.com>
+# Maintainer: ItzSelenux <itszariep@outlook.com>
+# Maintainer: ItzSelenux <itszariep@outlook.com>
+# Maintainer: ItzSelenux <itszariep@outlook.com>
+# Maintainer: ItzSelenux <itszariep@outlook.com>
+# Maintainer: ItzSelenux <itszariep@outlook.com>
+# Maintainer: ItzSelenux <itszariep@outlook.com>
 
 pkgname=wbar
+pkgver=2.3.4
 pkgver=2.3.4
 pkgrel=1
 pkgdesc='light and fast launch bar'
