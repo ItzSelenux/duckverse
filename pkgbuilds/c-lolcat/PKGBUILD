@@ -1,0 +1,26 @@
+pkgname=c-lolcat
+_pkgname=lolcat
+pkgver=1.2
+pkgrel=1
+pkgdesc="C implementation of lolcat"
+arch=('x86_64')
+url="https://github.com/jaseg/lolcat"
+license=('WTFPL')
+provides=('lolcat')
+source=("https://github.com/jaseg/${_pkgname}/archive/v${pkgver}.tar.gz")
+sha256sums=('b6e1a0e24479fbdd4eb907531339e2cafc0c00b78d19caf70e8377b8b7546331')
+
+
+build() 
+{
+  cd "${srcdir}/${_pkgname}-${pkgver}" 
+  make 
+}
+
+package() 
+{
+  cd "${srcdir}/${_pkgname}-${pkgver}"
+  mkdir -p "${pkgdir}/usr/bin"
+	install -Dm755 "${srcdir}/${_pkgname}-${pkgver}/lolcat" -t "${pkgdir}/usr/bin/lolcat"
+
+}
