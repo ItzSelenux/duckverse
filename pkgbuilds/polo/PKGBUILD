@@ -1,0 +1,18 @@
+# Maintainer: ItzSelenux <itszariep@outlook.com>
+pkgname=polo
+pkgver=18.8.2
+pkgrel=1
+pkgdesc='modern and lightweight file manager with support for multiple panes and tabs; support for archives, and much more.'
+arch=('x86_64')
+url='https://github.com/teejee2008/polo'
+license=('GPL3')
+depends=('libgee' 'xxhash' 'mediainfo' 'libmediainfo' 'tinyxml2' 'libzen' 'libmms' 'libgee' 'cairo' 'gdk-pixbuf2' 'gtk3' 'json-glib' 'pango' 'gvfs' 'libxml2' 'vte3')
+optdepends=('fish' 'rsync' 'wget' 'p7zip' 'ghostscript' 'ffmpeg' 'tar' 'xz'  'bzip2' 'gzip' 'p7zip' 'pv')
+noextract=("polo-file-manager-v18.8.2-amd64.deb")
+source=("https://github.com/teejee2008/polo/releases/download/v18.8-beta/polo-file-manager-v18.8.2-amd64.deb")
+sha256sums=('18e7217e57b9b422af5431ba9eaded1a44775a0781a1dc7abf50ed736bbbdeb4')
+
+package() {
+  bsdtar -O -xf "polo-file-manager-v18.8.2-amd64.deb" data.tar.xz | bsdtar -C "${pkgdir}" -xJf -
+  find "${pkgdir}" -type d -exec chmod 755 {} \;
+}
